@@ -1,7 +1,6 @@
 <?php
 
+use App\Livewire\Editor;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Editor::class)->name('editor');
